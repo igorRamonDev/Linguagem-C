@@ -14,6 +14,7 @@ int main(void)
     char letraI[] = "iI";   //array i s/t cont 6
     char letraO[] = "oO";   //array o u/v cont 7
     char letraU[] = "uU";	//array u x/w cont 8   
+	char asterisco = "*";	//arary *
 
 	printf("Digite um tweet..: ");
 	gets(tweet);
@@ -214,6 +215,32 @@ int main(void)
 			break;
 		}
 	}
+
+
+	for(int i = 0; i < strlen(tweet); i++){ //substitui numeros por *
+		if(tweet[i] == '1')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '2')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '3')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '4')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '5')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '6')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '7')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '8')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '9')
+		tweet[i] = asterisco;
+		else if (tweet[i] == '0')
+		tweet[i] = asterisco;
+	}
+
+	printf("%s", tweet);
 
 	return 0;
 }
